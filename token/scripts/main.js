@@ -3,8 +3,8 @@ const fs = require('fs');
 
 const web3 = new Web3('https://arb1.arbitrum.io/rpc'); // Arbitrum Rinkeby testnet endpoint
 
-const bytecode = fs.readFileSync('ChainPal.bin').toString();
-const abi = JSON.parse(fs.readFileSync('ChainPal.abi').toString());
+const bytecode = fs.readFileSync('ChainPal_sol_ChainPal.bin').toString();
+const abi = JSON.parse(fs.readFileSync('ChainPal_sol_ChainPal.abi').toString());
 
 const MyTokenContract = new web3.eth.Contract(abi);
 
